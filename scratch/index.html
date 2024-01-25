@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Investigator</title>
     <style>
-      body, html {
+      body,
+      html {
         margin: 0;
         padding: 0;
         height: 100%;
@@ -25,7 +26,12 @@
       .search-container {
         width: 60%;
         max-width: 600px; /* 追加: コンテナの最大幅を制限 */
-        background: rgba(33, 33, 33, 0.5);
+        /* background: rgba(51, 36, 26, 0.340); */
+        background: linear-gradient(
+          45deg,
+          rgb(63, 49, 39, 0.340),
+          rgb(70, 41, 22, 0.340)
+        );
         padding: 20px;
         border-radius: 5px;
         display: flex; /* フレックスボックスを適用 */
@@ -35,6 +41,7 @@
       .search-container h1 {
         color: aliceblue;
         font-weight: 500;
+        margin-top: 0;
         margin-bottom: 0px;
         width: 100%; /* タイトルは常に全幅 */
       }
@@ -45,8 +52,9 @@
         gap: 10px;
       }
 
-      input[type="text"], input[type="submit"] {
-        flex: 1 1 300px; 
+      input[type="text"],
+      input[type="submit"] {
+        flex: 1 1 300px;
         padding: 10px;
         border: 1px solid #333;
         background-color: #ebe6e6;
@@ -72,7 +80,8 @@
         .search-container {
           width: 80%; /* 画面が小さいときはコンテナの幅を増やす */
         }
-        input[type="text"], input[type="submit"] {
+        input[type="text"],
+        input[type="submit"] {
           flex: none; /* フレックスの挙動を無効にして幅を自動調整 */
           width: calc(100% - 20px); /* パディングとギャップを考慮した幅 */
         }
