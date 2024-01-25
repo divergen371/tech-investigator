@@ -1,106 +1,112 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Investigator</title>
-<style>
-  body {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #171A23; 
-    color: white;
-    margin: 0;
-    padding: 0;
-  }
-  .header {
-    background-color: #171A23; 
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .title {
-    font-size: 30px; 
-    font-weight: 100;
-    margin: 0;
-  }
-  .search-container {
-    background-color: #171A23; 
-    border-radius: 4px;
-    padding: 5px;
-  }
-  .search-container input {
-    border: 1px solid #333;
-    border-radius: 3px;
-    padding: 10px;
-    width: 200px; 
-    margin-right: 10px;
-  }
-  .search-container button {
-    background-color: #F99F48; 
-    border: none;
-    padding: 10px 15px;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  .site-info {
-    background-color: #171A23; 
-    padding: 20px;
-    text-align: left;
-  }
-  .site-info p {
-    margin: 5px 0;
-  }
-  .card-container {
-    padding: 20px;
-  }
-  .card {
-    background-color: #2A3556; 
-    padding: 20px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    color: #AAA;
-    margin-left: 20px;
-  }
-  .card-title {
-    margin: 0 0 10px 0;
-    font-size: medium;
-    font-weight:300;
-  }
-</style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Investigator</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #171a23;
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        background-color: #171a23;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .title {
+        font-size: 32px;
+        font-weight: 300;
+        margin: 0;
+      }
+      .search-container {
+        background-color: #171a23;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      input[type="text"] {
+        border: 1px solid #333;
+        border-radius: 3px;
+        padding: 10px;
+        width: 200px;
+        margin-right: 10px;
+      }
+      input[type="submit"] {
+        background-color: #f99f48;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .main-container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+      }
+      .site-info {
+        background-color: #171a23;
+        padding: 20px;
+        text-align: left;
+      }
+      .site-info p {
+        margin: 5px 0;
+      }
+      .card-container {
+        padding: 20px 0;
+      }
+      .card {
+        background-color: #2a3556;
+        padding: 20px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+      .card-title {
+        margin: 0 0 10px 0;
+        font-size: medium;
+        font-weight: 300;
+      }
+      .card p {
+        color: #aaa;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Tech Investigator</h1>
+      <div class="search-container">
+        <form action="/search" method="get">
+          <input type="text" placeholder="Please enter the URL" name="search" />
+          <input type="submit" value="Go">
+        </form>
+      </div>
+    </div>
 
-<div class="header">
-  <h1 class="title">Tech Investigator</h1>
-  <div class="search-container">
-    <input type="text" placeholder="Please enter the URL">
-    <button>Go</button>
-  </div>
-</div>
+    <div class="main-container">
+      <div class="site-info">
+        <p>sitehoge</p>
+        <p>URL: www.example.com</p>
+      </div>
 
-<div class="site-info">
-  <p>sitehoge</p>
-  <p>URL: www.example.com</p>
-</div>
-
-<div class="card-container">
-  <div class="card">
-    <h2 class="card-title">JavaScript Framework</h2>
-    <p>Vue.js</p>
-  </div>
-  <div class="card">
-    <h2 class="card-title">Analytics</h2>
-    <p>Google Analytics</p>
-  </div>
-  <div class="card">
-    <h2 class="card-title">Payment Processors</h2>
-    <p>Stripe</p>
-  </div>
-</div>
-
-</body>
+      <div class="card-container">
+        <div class="card">
+          <h2 class="card-title">JavaScript Framework</h2>
+          <p>Vue.js</p>
+        </div>
+        <div class="card">
+          <h2 class="card-title">Analytics</h2>
+          <p>Google Analytics</p>
+        </div>
+        <div class="card">
+          <h2 class="card-title">Payment Processors</h2>
+          <p>Stripe</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
