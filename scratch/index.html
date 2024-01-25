@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Investigator</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-image: url("../img/background1.jpg");
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .search-container {
+        width: 60%;
+        background: rgba(33, 33, 33, 0.5);
+        padding: 20px;
+        border-radius: 5px;
+      }
+      .search-container h1 {
+        color: aliceblue;
+        font-weight: 500;
+        margin-bottom: 0px;
+      }
+
+      .search-container form {
+        margin: 0;
+        padding: 0;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        margin: 10px 0;
+        width: 300px;
+        border: 1px solid #333;
+        background-color: #ebe6e6;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f99f48;
+        color: rgb(41, 1, 1);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #db6b00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search-container">
+      <h1>Tech Investigator</h1>
+      <form action="/search" method="get">
+        <input type="text" placeholder="Please enter the URL" name="search" />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+  </body>
+</html>
