@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Investigator</title>
     <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
       body {
         font-family: "Arial", sans-serif;
         background-image: url("../img/background1.jpg");
         background-size: cover;
-        height: 100vh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -36,14 +42,11 @@
       .search-container form {
         width: 100%; /* フォームも全幅 */
         display: flex;
-        flex-wrap: wrap;
         gap: 10px;
-        justify-content: center; /* 中央揃え */
       }
 
       input[type="text"], input[type="submit"] {
-        flex: 1; /* 可変領域を等しく分配 */
-        min-width: 120px; /* 最小幅を設定 */
+        flex: 1 1 300px; 
         padding: 10px;
         border: 1px solid #333;
         background-color: #ebe6e6;
@@ -51,6 +54,10 @@
       }
 
       input[type="submit"] {
+        flex: 0 0 auto;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: no;
         background-color: #f99f48;
         color: rgb(41, 1, 1);
         cursor: pointer;
