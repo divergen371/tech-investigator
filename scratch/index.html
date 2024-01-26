@@ -95,16 +95,7 @@
         <input type="submit" value="Go" />
       </form>
     </div>
-    <script>
-      // 検索バー未入力の際検索実行に対して反応を停止
-      document
-        .getElementById("search-form")
-        .addEventListener("submit", function (event) {
-          const searchInput = this.search.value.trim();
-          if (!searchInput) {
-            event.preventDefault();
-          }
-        });
+    <script src="main.js">
     </script>
   </body>
 </html>
