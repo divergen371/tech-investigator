@@ -86,7 +86,7 @@
     <div class="header">
       <a href="index.html" class="title"><p>Tech Investigator</p></a>
       <div class="search-container">
-        <form action="./result.html" method="get">
+        <form id="search-form" action="./result.html" method="get">
           <input type="text" placeholder="Please enter the URL" name="search" />
           <input type="submit" value="Go" />
         </form>
@@ -178,6 +178,19 @@
         );
       }
 
+      // 検索バー未入力の場合検索実行に対して反応を停止
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("search-form")
+          .addEventListener("submit", function (event) {
+            const searchInput = this.elements["search"].value.trim();
+            if (!searchInput) {
+              event.preventDefault(); // フォームの送信を阻止
+              alert("Please enter a URL."); // オプション: ユーザーにメッセージを表示
+            }
+          });
+      });
       // 検索フォームにイベントリスナーを設定
       document
         .querySelector("form")
