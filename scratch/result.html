@@ -64,6 +64,7 @@
       }
       .card-container {
         padding: 20px 0;
+        display: none;
       }
       .card {
         background-color: #2a3556;
@@ -101,18 +102,98 @@
 
       <div class="card-container">
         <div class="card">
-          <h2 class="card-title">JavaScript Framework</h2>
-          <p>Vue.js</p>
+          <h2 class="card-title"></h2>
+          <p></p>
         </div>
         <div class="card">
-          <h2 class="card-title">Analytics</h2>
-          <p>Google Analytics</p>
+          <h2 class="card-title"></h2>
+          <p></p>
         </div>
         <div class="card">
-          <h2 class="card-title">Payment Processors</h2>
-          <p>Stripe</p>
+          <h2 class="card-title"></h2>
+          <p></p>
         </div>
       </div>
     </div>
+    <script>
+      // APIへのリクエストを送信する関数
+      async function fetchTechnology(url, key) {
+        try {
+          const response = await fetch(
+            // `https://api.builtwith.com/free1/api.json?KEY=e9eb2db6-92d7-411b-a725-a6fe2a865558&LOOKUP=${url}`
+            `https://api.builtwith.com/free1/api.json?KEY=${key}&LOOKUP=${url}`
+          );
+
+          if (!response.ok) {
+            throw new Error("API request failed");
+          }
+          const data = await response.json();
+
+          if (data.Errors && data.Errors.length > 0) {
+            // 最初のエラーメッセージを表示
+            throw new Error(data.Errors[0].Message);
+          }
+
+          return data;
+        } catch (error) {
+          console.error("Error fetching technology data:", error);
+          alert("An error occurred while fetching data.");
+          return null;
+        }
+      }
+
+      // 結果を表示する関数
+
+      function displayResults(data) {
+        const container = document.querySelector(".card-container");
+        container.style.display = "block";
+        container.innerHTML = ""; // 既存の内容をクリア
+
+        if (!data || !data.groups) {
+          container.innerHTML = "<p>No results found</p>";
+          return;
+        }
+
+        data.groups.forEach((group) => {
+          const card = document.createElement("div");
+          card.className = "card";
+
+          let categoriesContent = "";
+          if (group.categories && group.categories.length > 0) {
+            const categoriesNames = group.categories
+              .map((cat) => cat.name)
+              .join(", ");
+            categoriesContent = `<p>Categories: ${categoriesNames}</p>`;
+          }
+
+          card.innerHTML = `
+      <h2 class="card-title">${group.name}</h2>
+      ${categoriesContent}
+    `;
+          container.appendChild(card);
+        });
+      }
+
+      // URLパラメータから検索クエリを取得
+      const urlParams = new URLSearchParams(window.location.search);
+      const searchQuery = urlParams.get("search");
+      const API_KEY = "e9eb2db6-92d7-411b-a725-a6fe2a865558";
+
+      // 検索クエリがあれば、APIにリクエストを送信
+      if ((searchQuery, API_KEY)) {
+        fetchTechnology(searchQuery, API_KEY).then((data) =>
+          displayResults(data)
+        );
+      }
+
+      // 検索フォームにイベントリスナーを設定
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const url = event.target.elements["search"].value;
+          fetchTechnology(url, API_KEY).then((data) => displayResults(data));
+        });
+    </script>
   </body>
 </html>
