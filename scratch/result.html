@@ -94,20 +94,13 @@
     </div>
 
     <div class="main-container">
-      <div class="site-info">
-        <p>sitehoge</p>
-        <p>URL: www.example.com</p>
-      </div>
-
-      <div class="card-container">
-      </div>
+        <!-- 検索結果表示領域 -->
+        <!-- 動的に挿入されます -->
     </div>
     <script>
-      // APIへのリクエストを送信する関数
       async function fetchTechnology(url, key) {
         try {
           const response = await fetch(
-            // `https://api.builtwith.com/free1/api.json?KEY=e9eb2db6-92d7-411b-a725-a6fe2a865558&LOOKUP=${url}`
             `https://api.builtwith.com/free1/api.json?KEY=${key}&LOOKUP=${url}`
           );
 
@@ -117,7 +110,6 @@
           const data = await response.json();
 
           if (data.Errors && data.Errors.length > 0) {
-            // 最初のエラーメッセージを表示
             throw new Error(data.Errors[0].Message);
           }
 
@@ -130,15 +122,26 @@
       }
 
       // 結果を表示する関数
-
       function displayResults(data) {
-        const container = document.querySelector(".card-container");
-        container.innerHTML = ""; // 既存の内容をクリア
+        const mainContainer = document.querySelector(".main-container");
+        mainContainer.innerHTML = "";
 
         if (!data || !data.groups) {
-          container.innerHTML = "<p>No results found</p>";
+          mainContainer.innerHTML = "<p>No results found</p>";
           return;
         }
+        
+        // サイト名表示
+        const siteInfo = document.createElement("div");
+        siteInfo.className = "site-info";
+        siteInfo.innerHTML = `
+        <p>Site: ${data.domain}</p>
+        <p>URL: ${data.domain}</p>
+        `;
+        mainContainer.appendChild(siteInfo);
+
+        const cardContainer = document.createElement("div");
+        cardContainer.className = "card-container";
 
         data.groups.forEach((group) => {
           const card = document.createElement("div");
@@ -156,8 +159,9 @@
       <h2 class="card-title">${group.name}</h2>
       ${categoriesContent}
     `;
-          container.appendChild(card);
+          cardContainer.appendChild(card);
         });
+        mainContainer.appendChild(cardContainer);
       }
 
       // URLパラメータから検索クエリを取得
