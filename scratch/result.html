@@ -182,16 +182,11 @@
       document
         .getElementById("search-form")
         .addEventListener("submit", function (event) {
-          const searchInput = this.elements["search"].value.trim();
+          const searchInput = this.search.value.trim();
           if (!searchInput) {
             event.preventDefault(); // フォームの送信を阻止
             return;
           }
-
-          const API_KEY = "e9eb2db6-92d7-411b-a725-a6fe2a865558";
-          fetchTechnology(searchInput, API_KEY).then((data) =>
-            displayResults(data)
-          );
         });
     </script>
   </body>
