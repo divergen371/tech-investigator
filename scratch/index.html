@@ -25,29 +25,28 @@
 
       .search-container {
         width: 60%;
-        max-width: 600px; /* 追加: コンテナの最大幅を制限 */
-        /* background: rgba(51, 36, 26, 0.340); */
+        max-width: 600px;
         background: linear-gradient(
           45deg,
-          rgb(63, 49, 39, 0.340),
-          rgb(70, 41, 22, 0.340)
+          rgb(63, 49, 39, 0.34),
+          rgb(70, 41, 22, 0.34)
         );
         padding: 20px;
         border-radius: 5px;
-        display: flex; /* フレックスボックスを適用 */
-        flex-wrap: wrap; /* 小さい画面で折り返しを許可 */
-        gap: 10px; /* 要素間の隙間 */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
       }
       .search-container h1 {
         color: aliceblue;
         font-weight: 500;
         margin-top: 0;
         margin-bottom: 0px;
-        width: 100%; /* タイトルは常に全幅 */
+        width: 100%;
       }
 
       .search-container form {
-        width: 100%; /* フォームも全幅 */
+        width: 100%;
         display: flex;
         gap: 10px;
       }
@@ -78,12 +77,12 @@
 
       @media (max-width: 768px) {
         .search-container {
-          width: 80%; /* 画面が小さいときはコンテナの幅を増やす */
+          width: 80%;
         }
         input[type="text"],
         input[type="submit"] {
-          flex: none; /* フレックスの挙動を無効にして幅を自動調整 */
-          width: calc(100% - 20px); /* パディングとギャップを考慮した幅 */
+          flex: none;
+          width: calc(100% - 20px);
         }
       }
     </style>
