@@ -94,8 +94,8 @@
     </div>
 
     <div class="main-container">
-        <!-- 検索結果表示領域 -->
-        <!-- 動的に挿入されます -->
+      <!-- 検索結果表示領域 -->
+      <!-- 動的に挿入されます -->
     </div>
     <script>
       async function fetchTechnology(url, key) {
@@ -130,12 +130,14 @@
           mainContainer.innerHTML = "<p>No results found</p>";
           return;
         }
-        
-        // サイト名表示
+
+        // TLD除去サイト名のため
+        const domainWithoutTld = data.domain.split(".").slice(0, -1).join(".");
+        // サイト情報表示
         const siteInfo = document.createElement("div");
         siteInfo.className = "site-info";
         siteInfo.innerHTML = `
-        <p>Site: ${data.domain}</p>
+        <p>Site: ${domainWithoutTld}</p>
         <p>URL: ${data.domain}</p>
         `;
         mainContainer.appendChild(siteInfo);
