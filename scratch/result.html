@@ -64,7 +64,6 @@
       }
       .card-container {
         padding: 20px 0;
-        display: none;
       }
       .card {
         background-color: #2a3556;
@@ -105,14 +104,6 @@
           <h2 class="card-title"></h2>
           <p></p>
         </div>
-        <div class="card">
-          <h2 class="card-title"></h2>
-          <p></p>
-        </div>
-        <div class="card">
-          <h2 class="card-title"></h2>
-          <p></p>
-        </div>
       </div>
     </div>
     <script>
@@ -142,11 +133,20 @@
         }
       }
 
+      // 結果表示前の初期表示隠蔽
+      function clearInitialContent() {
+        const container = document.querySelector(".card-container");
+        container.innerHTML = "";
+      }
+
+      document.addEventListener("DOMContentLoaded", clearInitialContent)
+
+
+
       // 結果を表示する関数
 
       function displayResults(data) {
         const container = document.querySelector(".card-container");
-        container.style.display = "block";
         container.innerHTML = ""; // 既存の内容をクリア
 
         if (!data || !data.groups) {
@@ -180,7 +180,7 @@
       const API_KEY = "e9eb2db6-92d7-411b-a725-a6fe2a865558";
 
       // 検索クエリがあれば、APIにリクエストを送信
-      if ((searchQuery, API_KEY)) {
+      if (searchQuery) {
         fetchTechnology(searchQuery, API_KEY).then((data) =>
           displayResults(data)
         );
