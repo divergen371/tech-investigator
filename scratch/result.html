@@ -14,17 +14,19 @@
       }
       .header {
         background-color: #171a23;
-        padding: 10px 20px;
+        padding: 10px 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
       .title {
-        font-size: 20px;
-        font-weight:100;
-        margin: 0;
-        color: #fffafa;
         text-decoration: none;
+        margin-left: 20px;
+      }
+
+      .title p {
+        font-size: 32px;
+        color: #fffafa;
       }
 
       .search-container {
@@ -82,7 +84,7 @@
   </head>
   <body>
     <div class="header">
-      <a href="index.html" class="title"><h1>Tech Investigator</h1></a>
+      <a href="index.html" class="title"><p>Tech Investigator</p></a>
       <div class="search-container">
         <form action="./result.html" method="get">
           <input type="text" placeholder="Please enter the URL" name="search" />
