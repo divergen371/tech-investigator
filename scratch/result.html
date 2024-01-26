@@ -179,25 +179,19 @@
       }
 
       // 検索バー未入力の場合検索実行に対して反応を停止
-
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("search-form")
-          .addEventListener("submit", function (event) {
-            const searchInput = this.elements["search"].value.trim();
-            if (!searchInput) {
-              event.preventDefault(); // フォームの送信を阻止
-              alert("Please enter a URL."); // オプション: ユーザーにメッセージを表示
-            }
-          });
-      });
-      // 検索フォームにイベントリスナーを設定
       document
-        .querySelector("form")
+        .getElementById("search-form")
         .addEventListener("submit", function (event) {
-          event.preventDefault();
-          const url = event.target.elements["search"].value;
-          fetchTechnology(url, API_KEY).then((data) => displayResults(data));
+          const searchInput = this.elements["search"].value.trim();
+          if (!searchInput) {
+            event.preventDefault(); // フォームの送信を阻止
+            return;
+          }
+
+          const API_KEY = "e9eb2db6-92d7-411b-a725-a6fe2a865558";
+          fetchTechnology(searchInput, API_KEY).then((data) =>
+            displayResults(data)
+          );
         });
     </script>
   </body>
