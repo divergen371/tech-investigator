@@ -16,19 +16,19 @@ async function fetchTechnology(url, key) {
     return data;
   } catch (error) {
     console.error("Error fetching technology data:", error);
-    return null;
+    return error;
   }
 }
 
 // 結果を表示する関数
-function displayResults(data, error) {
+function displayResults(data) {
   const mainContainer = document.querySelector(".main-container");
   mainContainer.innerHTML = "";
 
-  if (error) {
+  if (data instanceof Error) {
     mainContainer.innerHTML =
       // biome-ignore lint/style/useTemplate: <explanation>
-      "<p>An error occurred while fetching data: " + error.message + "</p>";
+      "<p>An error occurred while fetching data: " + data.message + "</p>";
     return;
   }
 
@@ -75,9 +75,7 @@ const API_KEY = "e9eb2db6-92d7-411b-a725-a6fe2a865558";
 
 // 検索クエリがあれば、APIにリクエストを送信
 if (searchQuery) {
-  fetchTechnology(searchQuery, API_KEY)
-    .then((data) => displayResults(data))
-    .catch((error) => displayResults(null, error));
+  fetchTechnology(searchQuery, API_KEY).then((data) => displayResults(data));
 }
 // 検索バー未入力の場合検索実行に対して反応を停止
 function handleFormSubmit(event) {
@@ -102,6 +100,8 @@ window.onscroll = () => {
   }
 };
 
-document.getElementById("back-to-top").onclick = () => {
-  window.scrollTo(0, 0);
-};
+if (window.location.pathname !== "/scratch/index.html") {
+  document.getElementById("back-to-top").onclick = () => {
+    window.scrollTo(0, 0);
+  };
+}
