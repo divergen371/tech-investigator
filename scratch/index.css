@@ -5,6 +5,7 @@ html {
   height: 100%;
   overflow: hidden;
 }
+
 body {
   font-family: "Arial", sans-serif;
   background-image: url("../img/background1.jpg");
@@ -30,6 +31,7 @@ body {
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .search-container h1 {
   color: aliceblue;
   font-weight: 500;
@@ -57,7 +59,7 @@ input[type="submit"] {
   flex: 0 0 auto;
   padding: 10px 20px;
   border-radius: 5px;
-  border: no;
+  border: none;
   background-color: #f99f48;
   color: rgb(41, 1, 1);
   cursor: pointer;
