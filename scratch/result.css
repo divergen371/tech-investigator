@@ -1,13 +1,19 @@
+body,
+.header,
+.search-container,
+.site-info {
+  background-color: #171a23;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #171a23;
   color: white;
   margin: 0;
   padding: 0;
 }
 
-.header {
-  background-color: #171a23;
+.header,
+.search-container {
   padding: 10px 30px;
   display: flex;
   justify-content: space-between;
@@ -25,25 +31,27 @@ body {
 }
 
 .search-container {
-  background-color: #171a23;
   border-radius: 4px;
   padding: 5px;
 }
 
-input[type="text"] {
-  border: 1px solid #333;
+input[type="text"],
+input[type="submit"] {
   border-radius: 3px;
   padding: 10px;
-  width: 200px;
   margin-right: 10px;
+}
+
+input[type="text"] {
+  border: 1px solid #333;
+  width: 200px;
   background-color: #fffafa;
+  flex-grow: 1;
 }
 
 input[type="submit"] {
   background-color: #f99f48;
   border: none;
-  padding: 10px 15px;
-  border-radius: 3px;
   cursor: pointer;
 }
 
@@ -54,12 +62,11 @@ input[type="submit"] {
 }
 
 .site-info {
-  background-color: #171a23;
-  padding: 20px;
   text-align: left;
 }
 
-.site-info p {
+.site-info p,
+.card-title {
   margin: 5px 0;
 }
 
@@ -75,7 +82,6 @@ input[type="submit"] {
 }
 
 .card-title {
-  margin: 0 0 10px 0;
   font-size: medium;
   font-weight: 300;
 }
@@ -100,4 +106,59 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .header,
+  .search-container {
+    flex-direction: column;
+  }
+  .title p {
+    font-size: 24px;
+  }
+  input[type="text"],
+  input[type="submit"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+  .title p {
+    font-size: 20px;
+  }
+  .search-container {
+    padding: 2px;
+  }
+  input[type="text"],
+  input[type="submit"] {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 768px), (max-width: 480px) {
+  .search-container {
+    flex-direction: column;
+  }
+  input[type="text"],
+  input[type="submit"] {
+    width: auto;
+    margin: 0 10px 0 0;
+  }
+}
+
+.search-container {
+  flex-wrap: nowrap;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  white-space: nowrap;
 }

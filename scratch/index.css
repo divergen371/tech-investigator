@@ -76,7 +76,18 @@ input[type="submit"]:hover {
   }
   input[type="text"],
   input[type="submit"] {
-    flex: none;
-    width: calc(100% - 20px);
+    flex: 1 0 auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-container {
+    width: 90%;
+  }
+  input[type="text"],
+  input[type="submit"] {
+    flex: 1 0 auto;
+    width: auto;
   }
 }
