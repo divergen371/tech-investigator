@@ -4,88 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Investigator</title>
-    <style>
-      body,
-      html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden;
-      }
-      body {
-        font-family: "Arial", sans-serif;
-        background-image: url("../img/background1.jpg");
-        background-size: cover;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-
-      .search-container {
-        width: 60%;
-        max-width: 600px;
-        background: linear-gradient(
-          45deg,
-          rgb(63, 49, 39, 0.34),
-          rgb(70, 41, 22, 0.34)
-        );
-        padding: 20px;
-        border-radius: 5px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-      .search-container h1 {
-        color: aliceblue;
-        font-weight: 500;
-        margin-top: 0;
-        margin-bottom: 0px;
-        width: 100%;
-      }
-
-      .search-container form {
-        width: 100%;
-        display: flex;
-        gap: 10px;
-      }
-
-      input[type="text"],
-      input[type="submit"] {
-        flex: 1 1 300px;
-        padding: 10px;
-        border: 1px solid #333;
-        background-color: #f3efef;
-        border-radius: 5px;
-      }
-
-      input[type="submit"] {
-        flex: 0 0 auto;
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: no;
-        background-color: #f99f48;
-        color: rgb(41, 1, 1);
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #db6b00;
-      }
-
-      @media (max-width: 768px) {
-        .search-container {
-          width: 80%;
-        }
-        input[type="text"],
-        input[type="submit"] {
-          flex: none;
-          width: calc(100% - 20px);
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <div class="search-container">
@@ -95,7 +14,6 @@
         <input type="submit" value="Go" />
       </form>
     </div>
-    <script src="main.js">
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
