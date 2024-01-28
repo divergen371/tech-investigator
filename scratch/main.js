@@ -23,46 +23,37 @@ async function fetchTechnology(url, key) {
 
 // 結果を表示する関数
 function displayResults(data) {
-	const mainContainer = document.querySelector(".main-container");
-	mainContainer.innerHTML = "";
+  const mainContainer = document.querySelector(".main-container");
+  mainContainer.innerHTML = "";
 
-	if (!data || !data.groups) {
-		mainContainer.innerHTML = "<p>No results found</p>";
-		return;
-	}
+  if (!data || !data.groups) {
+    mainContainer.innerHTML = "<p>No results found</p>";
+    return;
+  }
 
-	// TLD除去サイト名のため
-	const domainWithoutTld = data.domain.split(".").slice(0, -1).join(".");
-	// サイト情報表示
-	const siteInfo = document.createElement("div");
-	siteInfo.className = "site-info";
-	siteInfo.innerHTML = `
-        <p>Site: ${domainWithoutTld}</p>
-        <p>URL: ${data.domain}</p>
-        `;
-	mainContainer.appendChild(siteInfo);
+  // TLD除去サイト名のため
+  const domainWithoutTld = data.domain.split(".").slice(0, -1).join(".");
+  // サイト情報表示
+  const siteInfo = document.createElement("div");
+  siteInfo.className = "site-info";
+  // biome-ignore lint/style/useTemplate: <explanation>
+siteInfo.innerHTML = "<p>Site: " + domainWithoutTld + "</p><p>URL: " + data.domain + "</p>";
+  mainContainer.appendChild(siteInfo);
 
-	const cardContainer = document.createElement("div");
-	cardContainer.className = "card-container";
+  const cardContainer = document.createElement("div");
+  cardContainer.className = "card-container";
 
-	for (const group of data.groups) {
-		if (group.categories && group.categories.length > 0) {
-			const card = document.createElement("div");
-			card.className = "card";
-
-			const categoriesNames = group.categories
-				.map((cat) => cat.name)
-				.join(", ");
-			const categoriesContent = `<p>Categories: ${categoriesNames}</p>`;
-
-			card.innerHTML = `
-        <h2 class="card-title">${group.name}</h2>
-        ${categoriesContent}
-      `;
-			cardContainer.appendChild(card);
-		}
-	}
-	mainContainer.appendChild(cardContainer);
+  for (const group of data.groups) {
+    const categoriesNames = group.categories?.map((cat) => cat.name).join(", ");
+    if (categoriesNames) {
+      const card = document.createElement("div");
+      card.className = "card";
+      // biome-ignore lint/style/useTemplate: <explanation>
+card.innerHTML = "<h2 class='card-title'>" + group.name + "</h2><p>Categories: " + categoriesNames + "</p>";
+      cardContainer.appendChild(card);
+    }
+  }
+  mainContainer.appendChild(cardContainer);
 }
 // URLパラメータから検索クエリを取得
 const urlParams = new URLSearchParams(window.location.search);
