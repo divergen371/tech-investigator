@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>Tech Investigator</title>
     <style>
       body {
@@ -80,6 +84,22 @@
         color: #aaa;
         padding-left: 20px;
       }
+      #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #f99f48;
+        border: none;
+        color: #fffafa;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+      }
     </style>
   </head>
   <body>
@@ -97,6 +117,9 @@
       <!-- 検索結果表示領域 -->
       <!-- 動的に挿入されます -->
     </div>
+    <button id="back-to-top" style="display: none">
+      <i class="fas fa-arrow-up"></i>
+    </button>
     <script src="main.js"></script>
   </body>
 </html>
