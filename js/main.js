@@ -15,7 +15,7 @@ async function fetchTechnology(url, key) {
 
 		return data;
 	} catch (error) {
-		console.error("Error fetching technology data:", error);
+		console.error("Error fetching technology data.", error);
 		return error;
 	}
 }
