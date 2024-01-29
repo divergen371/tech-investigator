@@ -31,7 +31,7 @@ function displayResults(data) {
 	// alertだと鬱陶しかったのでここで対応する
 	if (data instanceof Error) {
 		mainContainer.innerHTML = `<p>An error occurred while fetching data: ${data.message}</p>`;
-		console.error("Error fetching technology data.", data);
+		console.error(data);
 		return;
 	}
 
