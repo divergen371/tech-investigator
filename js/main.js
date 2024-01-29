@@ -32,6 +32,7 @@ function displayResults(data) {
 	if (data instanceof Error) {
 		mainContainer.innerHTML =
 			`<p>An error occurred while fetching data: ${data.message}</p>`;
+		console.error("Error fetching technology data.", data);
 		return;
 	}
 
