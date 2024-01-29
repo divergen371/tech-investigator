@@ -46,7 +46,6 @@ function displayResults(data) {
 	const siteInfo = document.createElement("div");
 	siteInfo.className = "site-info";
 	siteInfo.innerHTML = `<p>Site: ${domainWithoutTld}</p><p>URL: ${data.domain}</p>`;
-	mainContainer.appendChild(siteInfo);
 
 	const cardContainer = document.createElement("div");
 	cardContainer.className = "card-container";
@@ -60,6 +59,7 @@ function displayResults(data) {
 			cardContainer.appendChild(card);
 		}
 	}
+	mainContainer.appendChild(siteInfo);
 	mainContainer.appendChild(cardContainer);
 }
 
