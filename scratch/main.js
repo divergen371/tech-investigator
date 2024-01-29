@@ -81,7 +81,7 @@ if (searchQuery) {
 function handleFormSubmit(event) {
   const searchInput = this.search.value.trim();
   if (!searchInput) {
-    event.preventDefault(); // フォームの送信を阻止
+    event.preventDefault();
     return;
   }
 }
@@ -93,7 +93,9 @@ document
 // ページ最上部に戻るボタンの表示・非表示とクリックイベント制御
 window.onscroll = () => {
   const button = document.getElementById("back-to-top");
-  if (window.scrollY > 200) {
+  const element= document.querySelector(".site-info");
+  const concealBasis = element.getBoundingClientRect().bottom;
+  if (concealBasis < 0) {
     button.style.display = "block";
   } else {
     button.style.display = "none";
