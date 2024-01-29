@@ -31,8 +31,7 @@ function displayResults(data) {
 	// alertだと鬱陶しかったのでここで対応する
 	if (data instanceof Error) {
 		mainContainer.innerHTML =
-			// biome-ignore lint/style/useTemplate: <explanation>
-			"<p>An error occurred while fetching data: " + data.message + "</p>";
+			`<p>An error occurred while fetching data: ${data.message}</p>`;
 		return;
 	}
 
@@ -47,8 +46,7 @@ function displayResults(data) {
 	const siteInfo = document.createElement("div");
 	siteInfo.className = "site-info";
 	siteInfo.innerHTML =
-		// biome-ignore lint/style/useTemplate: <explanation>
-		"<p>Site: " + domainWithoutTld + "</p><p>URL: " + data.domain + "</p>";
+		`<p>Site: ${domainWithoutTld}</p><p>URL: ${data.domain}</p>`;
 	mainContainer.appendChild(siteInfo);
 
 	const cardContainer = document.createElement("div");
@@ -60,12 +58,7 @@ function displayResults(data) {
 			const card = document.createElement("div");
 			card.className = "card";
 			card.innerHTML =
-				// biome-ignore lint/style/useTemplate: <explanation>
-				"<h2 class='card-title'>" +
-				group.name +
-				"</h2><p>Categories: " +
-				categoriesNames +
-				"</p>";
+				`<h2 class='card-title'>${group.name}</h2><p>Categories: ${categoriesNames}</p>`;
 			cardContainer.appendChild(card);
 		}
 	}
