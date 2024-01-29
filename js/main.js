@@ -1,23 +1,19 @@
 async function fetchTechnology(url, key) {
-	try {
-		const response = await fetch(
-			`https://api.builtwith.com/free1/api.json?KEY=${key}&LOOKUP=${url}`,
-		);
+	const response = await fetch(
+		`https://api.builtwith.com/free1/api.json?KEY=${key}&LOOKUP=${url}`,
+	);
 
-		if (!response.ok) {
-			throw new Error("API request failed");
-		}
-		const data = await response.json();
-
-		if (data.Errors && data.Errors.length > 0) {
-			throw new Error(data.Errors[0].Message);
-		}
-
-		return data;
-	} catch (error) {
-		console.error("Error fetching technology data.", error);
-		throw error; // エラーをスロー
+	if (!response.ok) {
+		throw new Error(`API request failed with status ${response.status}`);
 	}
+
+	const data = await response.json();
+
+	if (data.Errors && data.Errors.length > 0) {
+		throw new Error(data.Errors[0].Message);
+	}
+
+	return data;
 }
 
 // 結果を表示する関数
