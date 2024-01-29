@@ -1,0 +1,1404 @@
+{
+    "Results": [
+        {
+            "Result": {
+                "SpendHistory": [
+                    {
+                        "D": 1300932420000,
+                        "S": 0
+                    },
+                    {
+                        "D": 1632708420000,
+                        "S": 2333
+                    },
+                    {
+                        "D": 1637892420000,
+                        "S": 2567
+                    },
+                    {
+                        "D": 1658628420000,
+                        "S": 2667
+                    }
+                ],
+                "IsDB": "True",
+                "Spend": 2667,
+                "Paths": [
+                    {
+                        "Technologies": [
+                            {
+                                "Categories": [
+                                    "Root Authority"
+                                ],
+                                "Name": "DigiCert SSL",
+                                "Description": "Certificate provided by DigiCert.",
+                                "Link": "https://www.digicert.com/",
+                                "Tag": "ssl",
+                                "FirstDetected": 1376002800000,
+                                "LastDetected": 1706428800000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Categories": [
+                                    "JavaScript Library"
+                                ],
+                                "Name": "Prototype",
+                                "Description": "Prototype is a javascript framework which aims to ease development of dynamic web applications.",
+                                "Link": "https://www.prototypejs.org",
+                                "Tag": "javascript",
+                                "FirstDetected": 1296478800000,
+                                "LastDetected": 1351774800000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "CentOS",
+                                "Description": "CentOS is an Enterprise-class Linux Distribution derived from sources freely provided to the public by a prominent North American Enterprise Linux vendor.  CentOS conforms fully with the upstream vendors redistribution policy and aims to be 100% binary compatible.",
+                                "Link": "https://centos.org",
+                                "Tag": "Server",
+                                "FirstDetected": 1296478800000,
+                                "LastDetected": 1365080400000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "Apache",
+                                "Description": "Apache has been the most popular web server on the Internet since April 1996.",
+                                "Link": "https://httpd.apache.org/",
+                                "Tag": "Web Server",
+                                "FirstDetected": 1294059600000,
+                                "LastDetected": 1365080400000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "SPF",
+                                "Description": "The Sender Policy Framework is an open standard specifying a technical method to prevent sender address forgery.",
+                                "Link": "http://www.open-spf.org/",
+                                "Tag": "mx",
+                                "FirstDetected": 1397084400000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "IPv6",
+                                "Description": "The website has an IPv6 record.",
+                                "Link": "https://en.wikipedia.org/wiki/IPv6",
+                                "Tag": "Server",
+                                "FirstDetected": 1403740800000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "Viewport Meta",
+                                "Description": "This page uses the viewport meta tag which means the content may be optimized for mobile content.",
+                                "Link": "https://developers.google.com/speed/docs/insights/ConfigureViewport",
+                                "Tag": "mobile",
+                                "FirstDetected": 1388530800000,
+                                "LastDetected": 1706428800000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Categories": [
+                                    "US hosting"
+                                ],
+                                "Name": "Edgio",
+                                "Description": "The server is using infrastructure and hosting services from company previously knowqn as EdgeCast.",
+                                "Link": "https://edgecast.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1467068400000,
+                                "LastDetected": 1706396400000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Categories": [
+                                    "US hosting"
+                                ],
+                                "Name": "Verizon",
+                                "Description": "Hosting solutions from Verizon.",
+                                "Link": "https://verizon.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1498604400000,
+                                "LastDetected": 1587337200000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "WebEx Panel",
+                                "Description": "WebEx system.",
+                                "Link": "https://webex.com",
+                                "Tag": "widgets",
+                                "FirstDetected": 1519858800000,
+                                "LastDetected": 1705305600000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "SSL by Default",
+                                "Description": "The website redirects traffic to an HTTPS/SSL version by default.",
+                                "Link": "https://trends.builtwith.com/ssl",
+                                "Tag": "ssl",
+                                "FirstDetected": 1520290800000,
+                                "LastDetected": 1705305600000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "IPhone / Mobile Compatible",
+                                "Description": "The website contains code that allows the page to support IPhone / Mobile Content.",
+                                "Link": "https://apple.com",
+                                "Tag": "mobile",
+                                "FirstDetected": 1388530800000,
+                                "LastDetected": 1706428800000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Parent": "GDPR Consent Management Platform",
+                                "Name": "Yieldlab CMP System",
+                                "Description": "IAB digital advertising consent integration by Yieldlab.",
+                                "Link": "https://yieldlab.de",
+                                "Tag": "widgets",
+                                "FirstDetected": 1534374000000,
+                                "LastDetected": 1534374000000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "Content Delivery Network",
+                                "Description": "This page contains links that give the impression that some of the site contents are stored on a content delivery network.",
+                                "Link": "https://en.wikipedia.org/wiki/Content_Delivery_Network",
+                                "Tag": "CDN",
+                                "FirstDetected": 1568761200000,
+                                "LastDetected": 1672300800000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Categories": [
+                                    "Australian hosting"
+                                ],
+                                "Name": "Many Subdomains",
+                                "Description": "This domain has at least 1000 subdomains that resolve to an IP address.",
+                                "Link": "https://kb.builtwith.com/special-reports/many-subdomains/",
+                                "Tag": "hosting",
+                                "FirstDetected": 1622584800000,
+                                "LastDetected": 1705392000000,
+                                "IsPremium": "yes"
+                            },
+                            {
+                                "Categories": [
+                                    "Login"
+                                ],
+                                "Name": "Okta",
+                                "Description": "Identity management system.",
+                                "Link": "https://okta.com",
+                                "Tag": "widgets",
+                                "FirstDetected": 1628146800000,
+                                "LastDetected": 1633935600000,
+                                "IsPremium": "maybe"
+                            },
+                            {
+                                "Name": "My Salesforce",
+                                "Description": "This business has a Salesforce login page.",
+                                "Link": "https://salesforce.com",
+                                "Tag": "cms",
+                                "FirstDetected": 1628146800000,
+                                "LastDetected": 1705305600000,
+                                "IsPremium": "yes"
+                            },
+                            {
+                                "Name": "PHP",
+                                "Description": "PHP is a widely used general-purpose scripting language that is especially suited for Web development and can be embedded into HTML.",
+                                "Link": "https://www.php.net",
+                                "Tag": "framework",
+                                "FirstDetected": 1639987200000,
+                                "LastDetected": 1640246400000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "Apple Whitelist",
+                                "Description": "This website domain is on the Apple TLD whitelist which may potentially mean these domains will appear in autocomplete when looking up URLs on Apple products.",
+                                "Link": "https://apple.com",
+                                "Tag": "widgets",
+                                "FirstDetected": 1649055600000,
+                                "LastDetected": 1705392000000,
+                                "IsPremium": "yes"
+                            },
+                            {
+                                "Name": "DNSSEC",
+                                "Description": "DNSSEC strengthens DNS authentication by using digital signatures based on public key cryptography.",
+                                "Link": "https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en",
+                                "Tag": "ns",
+                                "FirstDetected": 1651129200000,
+                                "LastDetected": 1705305600000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "CrUX Dataset",
+                                "Description": "CrUX is a data collection system that gathers information about how real users interact with websites. This website is included in the user experiences data gathered from Google Chrome and thus considered sufficiently popular on the Internet.",
+                                "Link": "https://developer.chrome.com/docs/crux/about/",
+                                "Tag": "widgets",
+                                "FirstDetected": 1672473600000,
+                                "LastDetected": 1705392000000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Parent": "CrUX Dataset",
+                                "Name": "CrUX Top 50m",
+                                "Description": "Relative measure of site popularity within the CrUX dataset, measured by the total number of navigations on the origin. This site is in the top 50 million.",
+                                "Link": "https://developer.chrome.com/docs/crux/about/",
+                                "Tag": "widgets",
+                                "FirstDetected": 1672473600000,
+                                "LastDetected": 1705392000000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Parent": "CrUX Dataset",
+                                "Name": "CrUX Top 500k",
+                                "Description": "Relative measure of site popularity within the CrUX dataset, measured by the total number of navigations on the origin. This site is in the top 500k.",
+                                "Link": "https://developer.chrome.com/docs/crux/about/",
+                                "Tag": "widgets",
+                                "FirstDetected": 1672473600000,
+                                "LastDetected": 1705305600000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "Slack",
+                                "Description": "Messaging app for teams that makes working together simple and efficient.",
+                                "Link": "https://slack.com",
+                                "Tag": "widgets",
+                                "FirstDetected": 1681023600000,
+                                "LastDetected": 1705305600000,
+                                "IsPremium": "maybe"
+                            },
+                            {
+                                "Categories": [
+                                    "Login"
+                                ],
+                                "Name": "Azure Active Directory",
+                                "Description": "Enterprise identity service that provides single sign-on, multifactor authentication and more.",
+                                "Link": "https://azure.microsoft.com/en-us/products/active-directory/",
+                                "Tag": "widgets",
+                                "FirstDetected": 1682838000000,
+                                "LastDetected": 1682838000000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "Cloudflare Radar",
+                                "Description": "The website appears on the Cloudflare Radar Top 1m sites list",
+                                "Link": "https://radar.cloudflare.com",
+                                "Tag": "widgets",
+                                "FirstDetected": 1690268400000,
+                                "LastDetected": 1705392000000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Parent": "Cloudflare Radar",
+                                "Name": "Cloudflare Radar Top 50k",
+                                "Description": "The website appears in the Cloudflare Radar Top 50,000.",
+                                "Link": "https://radar.cloudflare.com",
+                                "Tag": "widgets",
+                                "FirstDetected": 1690268400000,
+                                "LastDetected": 1705392000000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Categories": [
+                                    "Server Location"
+                                ],
+                                "Name": "U.S. Server Location",
+                                "Description": "The web server is located in the United States.",
+                                "Link": "https://kb.builtwith.com/special-reports/server-location-tracking/",
+                                "Tag": "hosting",
+                                "FirstDetected": 1698390000000,
+                                "LastDetected": 1704787200000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1294059600000,
+                        "LastIndexed": 1706428800000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": ""
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "abc"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "amita.micro.service"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Parent": "CrUX Dataset",
+                                "Name": "CrUX Top 5m",
+                                "Description": "Relative measure of site popularity within the CrUX dataset, measured by the total number of navigations on the origin. This site is in the top 5 million.",
+                                "Link": "https://developer.chrome.com/docs/crux/about/",
+                                "Tag": "widgets",
+                                "FirstDetected": 1672473600000,
+                                "LastDetected": 1705305600000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1672819200000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Parent": "CrUX Dataset",
+                                "Name": "CrUX Top 10m",
+                                "Description": "Relative measure of site popularity within the CrUX dataset, measured by the total number of navigations on the origin. This site is in the top 10 million.",
+                                "Link": "https://developer.chrome.com/docs/crux/about/",
+                                "Tag": "widgets",
+                                "FirstDetected": 1678863600000,
+                                "LastDetected": 1678863600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1672473600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "apps"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "appshj"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "cabinet"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "cloud"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebs1"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1690441200000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1690441200000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebs201911295192"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebs201911412360"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebs201911615841"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebs20198146916"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1690441200000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1690441200000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebs2020125295rr"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebs202013063627"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebs202021810110"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebs202046105939"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebsccspractice"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebsdemo"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebsholenv1"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebsholenv2"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebskevinmai"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebssso"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebstest"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ebsvision"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "emotion.db"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "emotion.micro.service"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "emotion.storage"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "externalapps"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "fa-cln-smc-fa-ext"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1704528000000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1704528000000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "fa-cln-smc-idm-ext"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "fims-test"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Parent": "CrUX Dataset",
+                                "Name": "CrUX Top 1m",
+                                "Description": "Relative measure of site popularity within the CrUX dataset, measured by the total number of navigations on the origin. This site is in the top 1 million.",
+                                "Link": "https://developer.chrome.com/docs/crux/about/",
+                                "Tag": "widgets",
+                                "FirstDetected": 1694761200000,
+                                "LastDetected": 1705305600000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1696662000000,
+                                "LastDetected": 1696662000000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1694761200000,
+                        "LastIndexed": 1705305600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "gateway"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Parent": "CrUX Dataset",
+                                "Name": "CrUX Top 5m",
+                                "Description": "Relative measure of site popularity within the CrUX dataset, measured by the total number of navigations on the origin. This site is in the top 5 million.",
+                                "Link": "https://developer.chrome.com/docs/crux/about/",
+                                "Tag": "widgets",
+                                "FirstDetected": 1684134000000,
+                                "LastDetected": 1694761200000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1684306800000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1684134000000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "gitlab"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "idm"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "idm-0"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "idm2"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "interset6-cdf.arcsight"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "invalid"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ipa"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "lbmaso"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Parent": "CrUX Dataset",
+                                "Name": "CrUX Top 5m",
+                                "Description": "Relative measure of site popularity within the CrUX dataset, measured by the total number of navigations on the origin. This site is in the top 5 million.",
+                                "Link": "https://developer.chrome.com/docs/crux/about/",
+                                "Tag": "widgets",
+                                "FirstDetected": 1672473600000,
+                                "LastDetected": 1705392000000,
+                                "IsPremium": "no"
+                            },
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1672819200000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1672473600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "login"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "maintenance"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "music"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "non-existent"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "o122121010114009"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "one34"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "onp1229"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "openshift-cluster"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "pcf.alexspcf"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "pkclnsv5"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "qa02idp"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "ranioneclick"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1705737600000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1705737600000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "sim1229c19cd661"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1704528000000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1704528000000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "test"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1704528000000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1704528000000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "traci"
+                    },
+                    {
+                        "Technologies": [
+                            {
+                                "Name": "Domain Not Resolving",
+                                "Description": "This domain or subdomain is not resolving to an IP.",
+                                "Link": "https://builtwith.com",
+                                "Tag": "hosting",
+                                "FirstDetected": 1689663600000,
+                                "LastDetected": 1704528000000,
+                                "IsPremium": "no"
+                            }
+                        ],
+                        "FirstIndexed": 1689663600000,
+                        "LastIndexed": 1704528000000,
+                        "Domain": "example.com",
+                        "Url": "",
+                        "SubDomain": "viscloud"
+                    }
+                ]
+            },
+            "Meta": {
+                "Majestic": 282,
+                "Umbrella": 1915,
+                "Vertical": "Unknown",
+                "Social": [
+                    "http://facebook.com/example",
+                    "http://instagram.com/example",
+                    "http://twitter.com/example",
+                    "http://pinterest.com/example",
+                    "http://linkedin.com/company/example"
+                ],
+                "CompanyName": "Example",
+                "Telephones": [],
+                "Emails": [],
+                "City": "",
+                "State": "",
+                "Postcode": "",
+                "Country": "CA",
+                "Names": null,
+                "ARank": 128,
+                "QRank": 464139
+            },
+            "Attributes": {
+                "Employees": 1,
+                "MJRank": 276,
+                "MJTLDRank": 177,
+                "RefSN": 41191,
+                "RefIP": 80497,
+                "Followers": 500000,
+                "Sitemap": 0,
+                "GTMTags": 0,
+                "QubitTags": 0,
+                "TealiumTags": 0,
+                "AdobeTags": 0,
+                "CDimensions": 0,
+                "CGoals": 0,
+                "CMetrics": 0,
+                "ProductCount": 0
+            },
+            "FirstIndexed": 1294059600000,
+            "LastIndexed": 1706428800000,
+            "Lookup": "example.com",
+            "SalesRevenue": 0
+        }
+    ],
+    "Errors": [],
+    "Trust": null
+}
