@@ -79,6 +79,7 @@ input[type="submit"]:hover {
 .help-icon {
   position: relative;
   margin-left: auto;
+  cursor: pointer; 
 }
 
 .help-icon .fas {
@@ -99,7 +100,7 @@ input[type="submit"]:hover {
   left: 50%;
   margin-left: -160px; /* Use half of the width to center the tooltip */
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 270ms ease;
   bottom: 150%;
 }
 
