@@ -23,15 +23,14 @@ async function fetchTechnology(url, key) {
 // 結果を表示する関数
 function displayResults(data) {
 	const mainContainer = document.querySelector(".main-container");
-  if (!mainContainer) {
-    return;
-  }
+	if (!mainContainer) {
+		return;
+	}
 	mainContainer.innerHTML = "";
 
 	// alertだと鬱陶しかったのでここで対応する
 	if (data instanceof Error) {
-		mainContainer.innerHTML =
-			`<p>An error occurred while fetching data: ${data.message}</p>`;
+		mainContainer.innerHTML = `<p>An error occurred while fetching data: ${data.message}</p>`;
 		console.error("Error fetching technology data.", data);
 		return;
 	}
@@ -46,8 +45,7 @@ function displayResults(data) {
 	// サイト情報表示
 	const siteInfo = document.createElement("div");
 	siteInfo.className = "site-info";
-	siteInfo.innerHTML =
-		`<p>Site: ${domainWithoutTld}</p><p>URL: ${data.domain}</p>`;
+	siteInfo.innerHTML = `<p>Site: ${domainWithoutTld}</p><p>URL: ${data.domain}</p>`;
 	mainContainer.appendChild(siteInfo);
 
 	const cardContainer = document.createElement("div");
@@ -58,8 +56,7 @@ function displayResults(data) {
 		if (categoriesNames) {
 			const card = document.createElement("div");
 			card.className = "card";
-			card.innerHTML =
-				`<h2 class='card-title'>${group.name}</h2><p>Categories: ${categoriesNames}</p>`;
+			card.innerHTML = `<h2 class='card-title'>${group.name}</h2><p>Categories: ${categoriesNames}</p>`;
 			cardContainer.appendChild(card);
 		}
 	}
@@ -74,14 +71,19 @@ const API_KEY = "e9eb2db6-92d7-411b-a725-a6fe2a865558";
 // 正規表現でドメイン名チェック
 // TODO validator.jsのようなライブラリを導入した方がよいか？
 // 他のTLDも対応させるために正規表現を更新
-const hostNameRegex = /^([a-z0-9]+([-[a-z0-9]+)*\.)+(com|co\.jp|net|org|dev|io|gov|edu|ac\.jp)$/i;
+const hostNameRegex =
+	/^([a-z0-9]+([-[a-z0-9]+)*\.)+(com|co\.jp|net|org|dev|io|gov|edu|ac\.jp)$/i;
 
 // 検索クエリがあれば、APIにリクエストを送信
 if (searchQuery && hostNameRegex.test(searchQuery)) {
-	fetchTechnology(searchQuery, API_KEY).then((data) => displayResults(data));
+	fetchTechnology(searchQuery, API_KEY)
+		.then((data) => displayResults(data))
+		.catch((error) => {
+			console.error("Error fetching technology data.", error);
+			displayResults(new Error("API request failed"));
+		});
 } else {
-	// biome-ignore lint/style/useTemplate: <explanation>
-	displayResults(new Error("invalid hostname " + "「" +searchQuery + "」"));
+	displayResults(new Error(`invalid hostname 「${searchQuery}」`));
 }
 // 検索バー未入力の場合検索実行に対して反応を停止
 function handleFormSubmit(event) {
