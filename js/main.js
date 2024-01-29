@@ -122,6 +122,6 @@ function scrollToTop() {
 }
 
 window.onscroll = handleScroll;
-if (window.location.pathname !== "/scratch/index.html") {
+if (window.location.pathname !== "/index.html") {
 	document.getElementById("back-to-top").onclick = scrollToTop;
 }
