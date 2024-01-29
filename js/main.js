@@ -72,7 +72,7 @@ const API_KEY = "e9eb2db6-92d7-411b-a725-a6fe2a865558";
 
 // 正規表現でドメイン名チェック
 // TODO validator.jsのようなライブラリを導入した方がよいか？
-const hostNameRegex = /^([a-z0-9]+([-[a-z0-9]+)*\.)+(com|co\.jp)$/i;
+const hostNameRegex = /^([a-z0-9]+([-[a-z0-9]+)*\.)+(com|co\.jp|net|org|dev)$/i;
 
 // 検索クエリがあれば、APIにリクエストを送信
 if (searchQuery && hostNameRegex.test(searchQuery)) {
