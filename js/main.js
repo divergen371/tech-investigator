@@ -28,7 +28,6 @@ function displayResults(data) {
 	}
 	mainContainer.innerHTML = "";
 
-	// alertだと鬱陶しかったのでここで対応する
 	if (data instanceof Error) {
 		mainContainer.innerHTML = `<p>An error occurred while fetching data: ${data.message}</p>`;
 		console.error("Error fetching technology data.", data);
@@ -40,13 +39,10 @@ function displayResults(data) {
 		return;
 	}
 
-	// TLD除去サイト名のため
 	const domainWithoutTld = data.domain.split(".").slice(0, -1).join(".");
-	// サイト情報表示
 	const siteInfo = document.createElement("div");
 	siteInfo.className = "site-info";
 	siteInfo.innerHTML = `<p>Site: ${domainWithoutTld}</p><p>URL: ${data.domain}</p>`;
-	mainContainer.appendChild(siteInfo);
 
 	const cardContainer = document.createElement("div");
 	cardContainer.className = "card-container";
@@ -60,6 +56,9 @@ function displayResults(data) {
 			cardContainer.appendChild(card);
 		}
 	}
+
+	// 一度にすべての要素を追加
+	mainContainer.appendChild(siteInfo);
 	mainContainer.appendChild(cardContainer);
 }
 
