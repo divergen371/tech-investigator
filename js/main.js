@@ -38,6 +38,9 @@ function displayResults(data) {
 	}
 
 	// Lookupからサブドメインとトップレベルドメインを除去
+	/* FIXME "amazon.co.jp"みたいなドメイン名のとき
+			  "amazon.co"になってしまうので要修正
+			  */
 	const domainParts = data.Results[0].Lookup.split(".");
 	let domainWithoutTld = domainParts.slice(0, domainParts.length - 1).join(".");
 	if (domainParts.length <= 2) {
