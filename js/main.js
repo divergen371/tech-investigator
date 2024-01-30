@@ -17,7 +17,6 @@ async function fetchTechnology(url, key) {
 	return data;
 }
 
-// 結果を表示する関数
 function displayResults(data) {
 	const mainContainer = document.querySelector(".main-container");
 	if (!mainContainer) {
@@ -56,7 +55,7 @@ function displayResults(data) {
 		// トップレベルドメインが1部分からなる場合（e.g.：.com）
 		domainWithoutSubdomainAndTld = domainParts.slice(0, -1).join(".");
 	}
-	// サイト情報表示
+
 	const siteInfo = document.createElement("div");
 	siteInfo.className = "site-info";
 	siteInfo.innerHTML = `<p>Site: ${domainWithoutSubdomainAndTld}</p><p>Domain: ${data.Results[0].Lookup}</p>`;
@@ -67,7 +66,6 @@ function displayResults(data) {
 	const firstTechnologies = data.Results[0].Result.Paths[0].Technologies;
 	if (firstTechnologies && firstTechnologies.length > 0) {
 		for (const tech of firstTechnologies) {
-			// 全てのテクノロジーオブジェクトを取得
 			const card = document.createElement("div");
 			card.className = "card";
 			card.innerHTML = `<h2 class='card-title'>${tech.Tag}</h2><a href="${tech.Link}" target="_blank" rel="noopener">${tech.Name}</a></p>`;
@@ -85,7 +83,6 @@ const API_KEY = "44b77b8d-b05e-4ac9-99b8-80f1b39a6d76";
 
 // 正規表現でドメイン名チェック
 // TODO validator.jsのようなライブラリを導入した方がよいか？
-// 他のTLDも対応させるために正規表現を更新
 const hostNameRegex =
 	/^([a-z0-9]+([-[a-z0-9]+)*\.)+(com|co\.jp|net|org|dev|io|gov|edu|ac\.jp)$/i;
 

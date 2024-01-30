@@ -10,6 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url("../img/background1.jpg");
   background-size: cover;
+  /* background-position: 0px -15px; */
   height: 100%;
   display: flex;
   justify-content: center;
@@ -21,13 +22,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+.header h1 {
+  background-color: rgba(63, 47, 35, 0.25);
+}
 .search-container {
   width: 60%;
   max-width: 600px;
   background: linear-gradient(
     45deg,
-    rgb(63, 49, 39, 0.34),
-    rgb(70, 41, 22, 0.34)
+    rgb(63, 49, 39, 0.05),
+    rgb(70, 41, 22, 0.06)
   );
   padding: 20px;
   border-radius: 5px;
@@ -45,6 +50,8 @@ body {
   margin-right: 20px;
   width: 100%;
 }
+
+
 
 .search-container form {
   width: 100%;
