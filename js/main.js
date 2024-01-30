@@ -42,6 +42,7 @@ function displayResults(data) {
 	"amazon.co.jp"みたいなドメイン名のとき
 	"co"になってしまうので要修正 -> 修正済み
 	 */
+	// TODO: ドメイン名のパースライブラリを導入する
 	const domainParts = data.Results[0].Lookup.split(".");
 	let domainWithoutSubdomainAndTld;
 
