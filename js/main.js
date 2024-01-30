@@ -41,7 +41,7 @@ function displayResults(data) {
 	// サイト情報表示
 	const siteInfo = document.createElement("div");
 	siteInfo.className = "site-info";
-	siteInfo.innerHTML = `<p>Site: ${domainWithoutTld}</p><p>URL: ${data.domain}</p>`;
+	siteInfo.innerHTML = `<p>Site: ${domainWithoutTld}</p><p>Domain: ${data.domain}</p>`;
 
 	const cardContainer = document.createElement("div");
 	cardContainer.className = "card-container";
