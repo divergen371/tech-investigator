@@ -94,9 +94,13 @@ input[type="submit"] {
   font-weight: 300;
 }
 
-.card p {
+.card a {
   color: #aaa;
   padding-left: 20px;
+}
+
+.card a:hover {
+  color: #f99f48;
 }
 
 #back-to-top {
