@@ -62,7 +62,7 @@ function displayResults(data) {
 			// 全てのテクノロジーオブジェクトを取得
 			const card = document.createElement("div");
 			card.className = "card";
-			card.innerHTML = `<h2 class='card-title'>${tech.Tag}</h2><a href="${tech.Link}" target="_blank">${tech.Name}</a></p>`;
+			card.innerHTML = `<h2 class='card-title'>${tech.Tag}</h2><a href="${tech.Link}" target="_blank" rel="noopener">${tech.Name}</a></p>`;
 			cardContainer.appendChild(card);
 		}
 	}
