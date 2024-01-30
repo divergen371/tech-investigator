@@ -26,7 +26,7 @@ function displayResults(data) {
 
 	// alertだと鬱陶しかったのでここで対応する
 	if (data instanceof Error) {
-		mainContainer.innerHTML = `<p>An error occurred while fetching data: ${data.message}</p>`;
+		mainContainer.innerHTML = `<p>An error has occurred... ${data.message}</p>`;
 		console.error(data);
 		return;
 	}
@@ -76,7 +76,7 @@ if (searchQuery && hostNameRegex.test(searchQuery)) {
 		.then((data) => displayResults(data))
 		.catch((error) => {
 			console.error("Error fetching technology data.", error);
-			displayResults(new Error("API request failed"));
+			displayResults(new Error(error));
 		});
 } else {
 	displayResults(new Error(`invalid hostname 「${searchQuery}」`));
