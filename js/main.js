@@ -38,20 +38,27 @@ function displayResults(data) {
 	}
 
 	// Lookupからサブドメインとトップレベルドメインを除去
-	/* FIXME "amazon.co.jp"みたいなドメイン名のとき
-			  "amazon.co"になってしまうので要修正
-			  */
+	/* FIXED 
+	"amazon.co.jp"みたいなドメイン名のとき
+	"co"になってしまうので要修正 -> 修正済み
+	 */
 	const domainParts = data.Results[0].Lookup.split(".");
-	let domainWithoutTld = domainParts.slice(0, domainParts.length - 1).join(".");
-	if (domainParts.length <= 2) {
-		domainWithoutTld = domainParts[0];
-	} else if (domainParts.length > 2) {
-		domainWithoutTld = domainParts.slice(1, domainParts.length - 1).join(".");
+	let domainWithoutSubdomainAndTld;
+
+	// サブドメインが存在する場合（e.g.：www.amazon.co.jp）
+	if (domainParts.length > 3) {
+		domainWithoutSubdomainAndTld = domainParts.slice(1, -2).join(".");
+	} else if (domainParts[domainParts.length - 2].length <= 2) {
+		// トップレベルドメインが2部分からなる場合（e.g.：.co.jp）
+		domainWithoutSubdomainAndTld = domainParts.slice(0, -2).join(".");
+	} else {
+		// トップレベルドメインが1部分からなる場合（e.g.：.com）
+		domainWithoutSubdomainAndTld = domainParts.slice(0, -1).join(".");
 	}
 	// サイト情報表示
 	const siteInfo = document.createElement("div");
 	siteInfo.className = "site-info";
-	siteInfo.innerHTML = `<p>Site: ${domainWithoutTld}</p><p>Domain: ${data.Results[0].Lookup}</p>`;
+	siteInfo.innerHTML = `<p>Site: ${domainWithoutSubdomainAndTld}</p><p>Domain: ${data.Results[0].Lookup}</p>`;
 
 	const cardContainer = document.createElement("div");
 	cardContainer.className = "card-container";
