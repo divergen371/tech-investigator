@@ -22,8 +22,8 @@ body {
 }
 
 .header {
-  max-width: 1400px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 20px auto 0;
 }
 
 .title {
@@ -44,12 +44,12 @@ input[type="text"],
 input[type="submit"] {
   border-radius: 3px;
   padding: 10px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 input[type="text"] {
   border: 1px solid #333;
-  width: 200px;
+  width: 300px;
   margin-right: 10px;
   background-color: #fffafa;
   flex-grow: 1;
@@ -59,6 +59,7 @@ input[type="submit"] {
   background-color: #f99f48;
   border: none;
   cursor: pointer;
+  width: 50px;
   white-space: nowrap;
 }
 
@@ -128,9 +129,9 @@ input[type="submit"] {
 
   input[type="text"],
   input[type="submit"] {
-    /* width: auto; */
     margin: 0 10px 0 0;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -139,7 +140,7 @@ input[type="submit"] {
   }
 
   .title p {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .search-container {
@@ -149,8 +150,6 @@ input[type="submit"] {
 
   input[type="text"],
   input[type="submit"] {
-    padding: 5px;
-    /* width: auto; */
     margin: 0 10px 0 0;
   }
 }
