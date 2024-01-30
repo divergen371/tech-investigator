@@ -1,6 +1,7 @@
 async function fetchTechnology(url, key) {
 	const response = await fetch(
-		`https://api.builtwith.com/free1/api.json?KEY=${key}&LOOKUP=${url}`,
+		// `https://api.builtwith.com/free1/api.json?KEY=${key}&LOOKUP=${url}`,
+		`https://api.builtwith.com/v21/api.json?KEY=${key}&LOOKUP=${url}`,
 	);
 
 	if (!response.ok) {
@@ -31,27 +32,34 @@ function displayResults(data) {
 		return;
 	}
 
-	if (!data || !data.groups) {
+	if (!data || !data.Results || !data.Results[0].Result.Paths) {
 		mainContainer.innerHTML = "<p>No results found</p>";
 		return;
 	}
 
-	// TLD除去サイト名のため
-	const domainWithoutTld = data.domain.split(".").slice(0, -1).join(".");
+	// Lookupからサブドメインとトップレベルドメインを除去
+	const domainParts = data.Results[0].Lookup.split(".");
+	let domainWithoutTld = domainParts.slice(0, domainParts.length - 1).join(".");
+	if (domainParts.length <= 2) {
+		domainWithoutTld = domainParts[0];
+	} else if (domainParts.length > 2) {
+		domainWithoutTld = domainParts.slice(1, domainParts.length - 1).join(".");
+	}
 	// サイト情報表示
 	const siteInfo = document.createElement("div");
 	siteInfo.className = "site-info";
-	siteInfo.innerHTML = `<p>Site: ${domainWithoutTld}</p><p>Domain: ${data.domain}</p>`;
+	siteInfo.innerHTML = `<p>Site: ${domainWithoutTld}</p><p>Domain: ${data.Results[0].Lookup}</p>`;
 
 	const cardContainer = document.createElement("div");
 	cardContainer.className = "card-container";
 
-	for (const group of data.groups) {
-		const categoriesNames = group.categories?.map((cat) => cat.name).join(", ");
-		if (categoriesNames) {
+	const firstTechnologies = data.Results[0].Result.Paths[0].Technologies;
+	if (firstTechnologies && firstTechnologies.length > 0) {
+		for (const tech of firstTechnologies) {
+			// 全てのテクノロジーオブジェクトを取得
 			const card = document.createElement("div");
 			card.className = "card";
-			card.innerHTML = `<h2 class='card-title'>${group.name}</h2><p>Categories: ${categoriesNames}</p>`;
+			card.innerHTML = `<h2 class='card-title'>${tech.Tag}</h2><a href="${tech.Link}" target="_blank">${tech.Name}</a></p>`;
 			cardContainer.appendChild(card);
 		}
 	}
@@ -62,7 +70,7 @@ function displayResults(data) {
 // URLパラメータから検索クエリを取得
 const urlParams = new URLSearchParams(window.location.search);
 const searchQuery = urlParams.get("search");
-const API_KEY = "e9eb2db6-92d7-411b-a725-a6fe2a865558";
+const API_KEY = "44b77b8d-b05e-4ac9-99b8-80f1b39a6d76";
 
 // 正規表現でドメイン名チェック
 // TODO validator.jsのようなライブラリを導入した方がよいか？
