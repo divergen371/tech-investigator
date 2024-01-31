@@ -1,4 +1,7 @@
 async function fetchTechnology(url, key) {
+	if (/^Provide your API key.$/.test(key)) {
+		throw new Error(key);
+	}
 	const response = await fetch(
 		// `https://api.builtwith.com/free1/api.json?KEY=${key}&LOOKUP=${url}`,
 		`https://api.builtwith.com/v21/api.json?KEY=${key}&LOOKUP=${url}`,
@@ -27,7 +30,6 @@ function displayResults(data) {
 	// alertだと鬱陶しかったのでここで対応する
 	if (data instanceof Error) {
 		mainContainer.innerHTML = `<p>An error has occurred... ${data.message}</p>`;
-		console.error(data);
 		return;
 	}
 
